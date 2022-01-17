@@ -1,0 +1,141 @@
+body, html {
+    margin: 0;
+    background-color: #Feefe1;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex-basis: 50%;
+    height: 100vh;
+}
+
+.left img {
+    width: 550px;
+    position: absolute;
+    top: 250px;
+    left: 80px;
+}
+
+.right {
+    height: 100%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightitem {
+    width: 100%;
+    flex-basis: 25%;
+}
+
+.c1, .c3 {
+    display: flex;
+    width: 90%;
+    padding: 0px 0px 30px 5%;
+}
+.c1 {
+    align-items: flex-end;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.c3 {
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+}
+
+.c4 {
+    flex-direction: row;
+    justify-content: flex-start;
+    font-weight: 900;
+    width: 90%;
+    padding: 0px 0px 30px 5%;
+}
+
+input, form, button {
+    font-size: 20px;
+    
+}
+
+button {
+    padding: 8px;
+    display: inline-block;
+}
+
+button.signupbutton {
+    background-color: blue;
+    border-radius: 8px;
+    color: white;
+}
+
+input{
+    width: 87%;
+    padding: 10px;
+}
+
+.c4 button, input {
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.c4 button {
+    width: 70px;
+    height: 50px;
+}
+
+@media (min-width:961px) {
+    .c3, .c4 {
+        flex-basis: 1%;
+    }
+}
+
+@media (max-width:1265px) {
+    .left img {
+        width: 420px;
+        position: absolute;
+        top: 250px;
+        left: 80px;
+    }
+}
+
+@media (max-width:1100px) {
+    .left img {
+        width: 320px;
+        position: absolute;
+        top: 250px;
+        left: 80px;
+    }
+}
+
+@media (max-width:960px) {
+
+    .left img, .right {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .left img {
+        width: 320px;
+        top: 140px;
+    }
+
+    .right {
+        height: 60%;
+        bottom: -200px;
+        padding: 10px;
+    }
+
+    .c2, .c3, .c4 {
+        position: relative;
+        top: -20px
+    }
+
+
+}
